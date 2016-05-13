@@ -6,8 +6,8 @@
 //  Copyright © 2016年 williamzhang. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface MagicMoveTransition : NSObject
+@interface MagicMoveTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end

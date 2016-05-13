@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5B95B231CE59C08001687CC /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B95B181CE59C08001687CC /* CollectionViewCell.m */; };
+		C5B95B241CE59C08001687CC /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B95B1A1CE59C08001687CC /* CollectionViewController.m */; };
+		C5B95B251CE59C08001687CC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B95B1C1CE59C08001687CC /* DetailViewController.m */; };
+		C5B95B261CE59C08001687CC /* MagicMoveInverseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B95B1E1CE59C08001687CC /* MagicMoveInverseTransition.m */; };
+		C5B95B271CE59C08001687CC /* MagicMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B95B201CE59C08001687CC /* MagicMoveTransition.m */; };
+		C5B95B281CE59C08001687CC /* PanEdgeInteractionTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B95B221CE59C08001687CC /* PanEdgeInteractionTransition.m */; };
 		C5CEB0951CE1CC950093AC5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CEB0941CE1CC950093AC5A /* main.m */; };
 		C5CEB0981CE1CC950093AC5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CEB0971CE1CC950093AC5A /* AppDelegate.m */; };
-		C5CEB09B1CE1CC950093AC5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CEB09A1CE1CC950093AC5A /* ViewController.m */; };
 		C5CEB09E1CE1CC950093AC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CEB09C1CE1CC950093AC5A /* Main.storyboard */; };
 		C5CEB0A01CE1CC950093AC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CEB09F1CE1CC950093AC5A /* Assets.xcassets */; };
 		C5CEB0A31CE1CC950093AC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CEB0A11CE1CC950093AC5A /* LaunchScreen.storyboard */; };
@@ -35,12 +40,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5B95B171CE59C08001687CC /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		C5B95B181CE59C08001687CC /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		C5B95B191CE59C08001687CC /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		C5B95B1A1CE59C08001687CC /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		C5B95B1B1CE59C08001687CC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C5B95B1C1CE59C08001687CC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C5B95B1D1CE59C08001687CC /* MagicMoveInverseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveInverseTransition.h; sourceTree = "<group>"; };
+		C5B95B1E1CE59C08001687CC /* MagicMoveInverseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveInverseTransition.m; sourceTree = "<group>"; };
+		C5B95B1F1CE59C08001687CC /* MagicMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveTransition.h; sourceTree = "<group>"; };
+		C5B95B201CE59C08001687CC /* MagicMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveTransition.m; sourceTree = "<group>"; };
+		C5B95B211CE59C08001687CC /* PanEdgeInteractionTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanEdgeInteractionTransition.h; sourceTree = "<group>"; };
+		C5B95B221CE59C08001687CC /* PanEdgeInteractionTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanEdgeInteractionTransition.m; sourceTree = "<group>"; };
 		C5CEB0901CE1CC950093AC5A /* NavigationControllerTransitioning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationControllerTransitioning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CEB0941CE1CC950093AC5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5CEB0961CE1CC950093AC5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5CEB0971CE1CC950093AC5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C5CEB0991CE1CC950093AC5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C5CEB09A1CE1CC950093AC5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C5CEB09D1CE1CC950093AC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5CEB09F1CE1CC950093AC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5CEB0A21CE1CC950093AC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,9 +118,19 @@
 			children = (
 				C5CEB0961CE1CC950093AC5A /* AppDelegate.h */,
 				C5CEB0971CE1CC950093AC5A /* AppDelegate.m */,
-				C5CEB0991CE1CC950093AC5A /* ViewController.h */,
-				C5CEB09A1CE1CC950093AC5A /* ViewController.m */,
 				C5CEB09C1CE1CC950093AC5A /* Main.storyboard */,
+				C5B95B171CE59C08001687CC /* CollectionViewCell.h */,
+				C5B95B181CE59C08001687CC /* CollectionViewCell.m */,
+				C5B95B191CE59C08001687CC /* CollectionViewController.h */,
+				C5B95B1A1CE59C08001687CC /* CollectionViewController.m */,
+				C5B95B1B1CE59C08001687CC /* DetailViewController.h */,
+				C5B95B1C1CE59C08001687CC /* DetailViewController.m */,
+				C5B95B1D1CE59C08001687CC /* MagicMoveInverseTransition.h */,
+				C5B95B1E1CE59C08001687CC /* MagicMoveInverseTransition.m */,
+				C5B95B1F1CE59C08001687CC /* MagicMoveTransition.h */,
+				C5B95B201CE59C08001687CC /* MagicMoveTransition.m */,
+				C5B95B211CE59C08001687CC /* PanEdgeInteractionTransition.h */,
+				C5B95B221CE59C08001687CC /* PanEdgeInteractionTransition.m */,
 				C5CEB09F1CE1CC950093AC5A /* Assets.xcassets */,
 				C5CEB0A11CE1CC950093AC5A /* LaunchScreen.storyboard */,
 				C5CEB0A41CE1CC950093AC5A /* Info.plist */,
@@ -270,9 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5CEB09B1CE1CC950093AC5A /* ViewController.m in Sources */,
+				C5B95B281CE59C08001687CC /* PanEdgeInteractionTransition.m in Sources */,
+				C5B95B251CE59C08001687CC /* DetailViewController.m in Sources */,
+				C5B95B241CE59C08001687CC /* CollectionViewController.m in Sources */,
+				C5B95B231CE59C08001687CC /* CollectionViewCell.m in Sources */,
 				C5CEB0981CE1CC950093AC5A /* AppDelegate.m in Sources */,
+				C5B95B261CE59C08001687CC /* MagicMoveInverseTransition.m in Sources */,
 				C5CEB0951CE1CC950093AC5A /* main.m in Sources */,
+				C5B95B271CE59C08001687CC /* MagicMoveTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +528,7 @@
 				C5CEB0BF1CE1CC950093AC5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5CEB0C01CE1CC950093AC5A /* Build configuration list for PBXNativeTarget "NavigationControllerTransitioningTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +537,7 @@
 				C5CEB0C21CE1CC950093AC5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5CEB0C31CE1CC950093AC5A /* Build configuration list for PBXNativeTarget "NavigationControllerTransitioningUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +546,7 @@
 				C5CEB0C51CE1CC950093AC5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
