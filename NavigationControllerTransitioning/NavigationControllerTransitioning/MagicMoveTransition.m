@@ -11,10 +11,12 @@
 #import "DetailViewController.h"
 #import "CollectionViewCell.h"
 
+#define MagicMoveDuration 0.6
+
 @implementation MagicMoveTransition
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 0.4;
+    return MagicMoveDuration;
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
@@ -24,7 +26,8 @@
     UIView *containerView = [transitionContext containerView];
     
     UICollectionView *collectionView = fromVC.collectionView;
-    CollectionViewCell *cell = (CollectionViewCell *)[collectionView cellForItemAtIndexPath:[collectionView indexPathsForSelectedItems].firstObject];
+    fromVC.selectedIndexPath = [collectionView indexPathsForSelectedItems].firstObject;
+    CollectionViewCell *cell = (CollectionViewCell *)[collectionView cellForItemAtIndexPath:fromVC.selectedIndexPath];
     
     // 获取到截图并计算出相对应的frame
     UIView *snapshotView = [cell.imageView snapshotViewAfterScreenUpdates:NO];
@@ -41,11 +44,13 @@
     [containerView addSubview:snapshotView];
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext]
-                     animations:^
-    {
-        [containerView layoutIfNeeded];
-        toVC.view.alpha = 1;
-        snapshotView.frame = [containerView convertRect:toVC.imageView.frame fromView:toVC.view];
+                          delay:0
+         usingSpringWithDamping:0.6
+          initialSpringVelocity:1.0
+                        options:UIViewAnimationOptionCurveLinear animations:^ {
+                            [containerView layoutIfNeeded];
+                            toVC.view.alpha = 1;
+                            snapshotView.frame = [containerView convertRect:toVC.imageView.frame fromView:toVC.view];
     
     } completion:^(BOOL finished) {
         toVC.imageView.hidden = NO;

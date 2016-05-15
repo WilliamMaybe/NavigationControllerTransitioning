@@ -12,7 +12,6 @@
 		C5B95B251CE59C08001687CC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B95B1C1CE59C08001687CC /* DetailViewController.m */; };
 		C5B95B261CE59C08001687CC /* MagicMoveInverseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B95B1E1CE59C08001687CC /* MagicMoveInverseTransition.m */; };
 		C5B95B271CE59C08001687CC /* MagicMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B95B201CE59C08001687CC /* MagicMoveTransition.m */; };
-		C5B95B281CE59C08001687CC /* PanEdgeInteractionTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B95B221CE59C08001687CC /* PanEdgeInteractionTransition.m */; };
 		C5CEB0951CE1CC950093AC5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CEB0941CE1CC950093AC5A /* main.m */; };
 		C5CEB0981CE1CC950093AC5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CEB0971CE1CC950093AC5A /* AppDelegate.m */; };
 		C5CEB09E1CE1CC950093AC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CEB09C1CE1CC950093AC5A /* Main.storyboard */; };
@@ -50,8 +49,6 @@
 		C5B95B1E1CE59C08001687CC /* MagicMoveInverseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveInverseTransition.m; sourceTree = "<group>"; };
 		C5B95B1F1CE59C08001687CC /* MagicMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveTransition.h; sourceTree = "<group>"; };
 		C5B95B201CE59C08001687CC /* MagicMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveTransition.m; sourceTree = "<group>"; };
-		C5B95B211CE59C08001687CC /* PanEdgeInteractionTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanEdgeInteractionTransition.h; sourceTree = "<group>"; };
-		C5B95B221CE59C08001687CC /* PanEdgeInteractionTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanEdgeInteractionTransition.m; sourceTree = "<group>"; };
 		C5CEB0901CE1CC950093AC5A /* NavigationControllerTransitioning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationControllerTransitioning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CEB0941CE1CC950093AC5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5CEB0961CE1CC950093AC5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,8 +126,6 @@
 				C5B95B1E1CE59C08001687CC /* MagicMoveInverseTransition.m */,
 				C5B95B1F1CE59C08001687CC /* MagicMoveTransition.h */,
 				C5B95B201CE59C08001687CC /* MagicMoveTransition.m */,
-				C5B95B211CE59C08001687CC /* PanEdgeInteractionTransition.h */,
-				C5B95B221CE59C08001687CC /* PanEdgeInteractionTransition.m */,
 				C5CEB09F1CE1CC950093AC5A /* Assets.xcassets */,
 				C5CEB0A11CE1CC950093AC5A /* LaunchScreen.storyboard */,
 				C5CEB0A41CE1CC950093AC5A /* Info.plist */,
@@ -295,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B95B281CE59C08001687CC /* PanEdgeInteractionTransition.m in Sources */,
 				C5B95B251CE59C08001687CC /* DetailViewController.m in Sources */,
 				C5B95B241CE59C08001687CC /* CollectionViewController.m in Sources */,
 				C5B95B231CE59C08001687CC /* CollectionViewCell.m in Sources */,
@@ -445,9 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NavigationControllerTransitioning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = money.NavigationControllerTransitioning;
+				PRODUCT_BUNDLE_IDENTIFIER = money.william.navigationTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -456,9 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NavigationControllerTransitioning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = money.NavigationControllerTransitioning;
+				PRODUCT_BUNDLE_IDENTIFIER = money.william.navigationTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

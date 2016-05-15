@@ -6,8 +6,12 @@
 //  Copyright © 2016年 williamzhang. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface MagicMoveInverseTransition : NSObject
+@interface MagicMoveInverseTransition : UIPercentDrivenInteractiveTransition <UIViewControllerAnimatedTransitioning>
+
+- (void)panToDismiss:(UIViewController *)viewController;
+
+@property (nonatomic ,readonly) BOOL interactive;
 
 @end

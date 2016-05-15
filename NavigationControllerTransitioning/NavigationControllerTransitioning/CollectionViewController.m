@@ -7,10 +7,13 @@
 //
 
 #import "CollectionViewController.h"
+#import "MagicMoveInverseTransition.h"
 #import "DetailViewController.h"
 #import "MagicMoveTransition.h"
 
-@interface CollectionViewController () <UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate>
+@interface CollectionViewController () <UINavigationControllerDelegate>
+
+@property (nonatomic ,strong) MagicMoveInverseTransition *moveInverseTransition;
 
 @end
 
@@ -26,6 +29,12 @@ static NSString * const reuseIdentifier = @"CollectionViewIdentifier";
     // self.clearsSelectionOnViewWillAppear = NO;
         
     // Do any additional setup after loading the view.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    self.moveInverseTransition = [MagicMoveInverseTransition new];
+    UIViewController *dst = segue.destinationViewController;
+    [self.moveInverseTransition panToDismiss:dst];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -61,6 +70,18 @@ static NSString * const reuseIdentifier = @"CollectionViewIdentifier";
 {
     if ([toVC isKindOfClass:[DetailViewController class]]) {
         return [MagicMoveTransition new];
+    }
+    
+    if ([toVC isKindOfClass:[CollectionViewController class]]) {
+        return [MagicMoveInverseTransition new];
+    }
+    
+    return nil;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
+    if ([animationController isKindOfClass:[MagicMoveInverseTransition class]]) {
+        return self.moveInverseTransition.interactive ? self.moveInverseTransition : nil;
     }
     
     return nil;
